@@ -20,46 +20,59 @@
   <body>
     <!-- Header Section -->
     <header class="container">
-      <div class="header">
+      <div class="header row desktop">
         <img class="img-logo" src="/images/Logo.svg" />
-        <ul class="navbar">
+        <ul class="navbar desktop">
           <li>Home</li>
           <li>Features</li>
           <li>Pricing</li>
           <li>Blog</li>
           <li>Contact</li>
         </ul>
-        <div class="buttons">
-          <button class="log-in-button">Log In</button>
-          <button class="get-started-button">Get Started</button>
+        <div class="buttons desktop">
+          <button class="desktop log-in-button">Log In</button>
+          <button class="desktop get-started-button">Get Started</button>
         </div>
+        <img class="mobile" src="/images/Menu Button.jpg">
       </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero-container container">
+      <div class="row">
       <div class="hero-text">
-        <h1 class="hero-container-h1">
+        <h1 class="hero-container-h1 desktop">
           Let's get <br />
           fusely <br />
           together
         </h1>
-        <p class="hero-container-p">
+        <h1 class="hero-container-h1 mobile">
+          Let's get 
+          fusely <br />
+          together
+        </h1>
+        <p class="hero-container-p desktop">
           Outcome-centered product that reduce churn,<br />
           optimize pricing, and grow your subscription <br />
+          business end-to-end.
+        </p>
+        <p class="hero-container-p mobile">
+          Outcome-centered product that reduce churn,
+          optimize pricing, and grow your subscription 
           business end-to-end.
         </p>
         <button class="get-started-button secondary-button">Get Started</button>
       </div>
       <div class="hero-image">
-        <img src="/images/Group 36.png" alt="" />
+        <img src="/images/Group 36.png" class="image-hero" />
       </div>
+    </div>
     </section>
 
     <!-- Main Section -->
 
     <section class="main-container container">
-      <div class="main-logo">
+      <div class="row main-logo container">
         <ul class="partner-logo">
           <li class="logo">
             <img src="images/binator logo.png" alt="binator logo" />
@@ -79,31 +92,77 @@
         </ul>
       </div>
       <section class="main-container-section">
+        <div class="row main-div">
         <div class="main-image">
           <img src="/images/Section Image.png" alt="" />
         </div>
         <div class="main-container-text">
-          <h1 class="hero-container-h1">
+          <h1 class="hero-container-h1 desktop">
             Detailed <br />
             Examination
           </h1>
-          <p class="hero-container-p">
+          <p class="hero-container-p desktop">
             A daily dataset to keep you up to date on <br />
             subscription market trends and what's <br />
             happening in your vertical.
           </p>
+          <h1 class="hero-container-h1 mobile">
+            Detailed Examination
+          </h1>
+          <p class="hero-container-p mobile">
+            A daily dataset to keep you up to date on 
+            subscription market trends and what's 
+            happening in your vertical.
+          </p>
           <div class="main-container-link">
-            <a href="#" class="main-container-a"> Learn More </a>
+            <a href="#" class="main-container-a mobile"> Learn More </a>
           </div>
         </div>
+      </div>
+      </section>
+      <section class="main-container-section mobile">
+        <div class="row main-div">
+        <div class="main-image mobile">
+          <img src="/images/Section Image2.jpg" class="mobile main-image-1" />
+        </div>
+        <div class="main-container-text mobile">
+          <h1 class="hero-container-h">
+            Creative Solutions
+          </h1>  
+          <p class="hero-container-p mobile">
+            Creativity is our second name. We're full of inventive ideas and we're happy to present them to you.
+          </p>
+          <div class="main-container-link mobile">
+            <a href="#" class="main-container-a mobile"> Learn More </a>
+          </div>
+        </div>
+      </div>
+      </section>
+      <section class="main-container-section mobile">
+        <div class="row main-div mobile">
+        <div class="main-image">
+          <img src="/images/Section Image (2).jpg" class="mobile main-image-2" />
+        </div>
+        <div class="main-container-text-2 mobile">
+          <h1 class="hero-container-h1 mobile">
+            Professional Team
+          </h1>  
+          <p class="hero-container-p mobile">
+            Well, obviously, we're professionals. Don't hesitate - get to know us better.
+          </p>
+          <div class="main-container-link mobile">
+            <a href="#" class="main-container-a mobile"> Learn More </a>
+          </div>
+        </div>
+      </div>
       </section>
     </section>
 
     <!-- Pricing Section -->
 
-    <section class="container">
+    <section class="container pricing-container">
       <h2 class="pricing-h2">Choose your plan</h2>
-      <div class="container_">
+      <div class="row container_ pricing">
         <div class="pricing-card">
           <p class="pricing-card-p">starter</p>
           <h2 class="pricing-h2">Free</h2>
@@ -139,20 +198,20 @@
     </section>
 
     <!-- Contact Banner Section -->
-    <section class="container banner">
-    <div class="contact-banner" >
+    <section class="row container banner">
+    <div class="row contact-banner" >
         <h1>
           Interested in
           <br />
           getting fusely?
         </h1>
-        <button class="contact-banner-btn">Let's talk</button>
+        <button class="contact-banner-btn ">Let's talk</button>
     </div>
   </section>
     
 
     <!-- Footer Section -->
-    <footer>
+    <footer class="row footer footer-div">
       <div class="footer-div">
         <h5>Product</h5>
         <ul class="footer-list">

@@ -3,6 +3,16 @@
   margin: 0;
   box-sizing: border-box;
 }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.mobile {
+  display: none;
+}
+.desktop {
+  display: block;
+}
 /* Header Section */
 .header {
   display: flex;
@@ -28,6 +38,7 @@ li {
 .container {
   width: 1300px;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 .img-logo {
   display: inline-block;
@@ -101,6 +112,7 @@ li {
 }
 .hero-container-h1 {
   font-family: "Playfair Display";
+  margin-top: 30px;
   font-size: 86px;
   line-height: 1;
 }
@@ -142,14 +154,14 @@ li {
   position: absolute;
   content: "";
   width: 100%;
-  height: 4px;
+  height: 2px;
   background-color: #9e99ff;
-  bottom: -10px;
+  bottom: -2px;
   left: 0;
 }
 .main-image {
   margin-top: 150px;
-  width: 600px;
+  width: 688px;
   height: 440px;
 }
 
@@ -168,7 +180,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 47px;
+  margin: 0 45px;
 }
 
 /* Pricing Section */
@@ -180,16 +192,21 @@ li {
   line-height: 64px;
   display: flex;
   justify-content: center;
-  margin-bottom: 80px;
 }
 .pricing-btn {
   width: 150px;
   margin-top: 30px;
 }
+.pricing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .pricing-btn:hover {
   background-color: white;
   color: #6c63ff;
 }
+
 .pricing-card {
   font-family: "Open Sans";
   justify-content: center;
@@ -198,12 +215,12 @@ li {
   height: 420px;
   text-align: center;
 }
+
 .pricing-card:hover {
   background-color: #6c63ff;
   color: #ffffffcc;
-  height: px;
-  transform: translateY(-10px);
-  transition: 0.5s ease-out;
+  height: 500px;
+  transition: 0.5s;
 }
 .pricing-card:hover p {
   color: white;
@@ -254,11 +271,21 @@ li {
   height: 54px;
   background-color: #6c63ff;
   font-family: "Open Sans";
+  font-size: 16px;
   font-weight: 700;
   color: white;
   border-radius: 3px;
   border: 1px solid #6c63ff;
 }
+.contact-banner-btn:hover {
+  border: 1px solid #6c63ff;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: white;
+  color: #6c63ff;
+}
+
 .contact-banner h1 {
   font-size: 50px;
 }
@@ -272,7 +299,7 @@ footer {
   display: flex;
   justify-content: center;
   text-decoration: none;
-  gap: 70px;
+  gap: 60px;
 }
 .footer-div h5 {
   margin-left: 10px;
@@ -286,6 +313,7 @@ footer {
   display: flex;
   list-style: none;
 }
+
 .footer-div {
   margin-top: 240px;
 }
@@ -308,4 +336,94 @@ footer {
   font-family: "Open Sans";
   padding-right: 80px;
   color: #9893a3;
+}
+
+/* Media section ********************** */
+
+@media only screen and (max-width: 900px) {
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+  .container {
+    width: 90%;
+  }
+  .row {
+    display: flex;
+  }
+
+  /* Hero Container */
+
+  .hero-container-h1 {
+    font-family: "Playfair Display";
+    margin-top: 20px;
+    font-size: 43px;
+    line-height: 1;
+  }
+  .header {
+    justify-content: space-between;
+  }
+  .hero-text {
+    width: 700px;
+  }
+  .image-hero {
+    width: 688px;
+    margin-top: 30px;
+  }
+
+  /* Main Section */
+  .main-logo {
+    margin-top: 130px;
+    width: 688px;
+  }
+  .logo {
+    margin: 0 30px;
+  }
+  .main-image {
+    justify-content: center;
+    margin-top: 100px;
+  }
+  .main-image-1 {
+    width: 90%;
+  }
+  .main-image-2 {
+    margin-top: 10px;
+    width: 90%;
+  }
+  .main-container-text {
+    margin-left: 0;
+  }
+  .main-container-text-2 {
+    margin-top: 150px;
+  }
+  .main-div {
+    flex-direction: column-reverse;
+  }
+
+  /* Pricing Section */
+
+  .pricing-card {
+    width: 680px;
+    height: 600px;
+  }
+  .pricing-card:hover {
+    background-color: #6c63ff;
+    color: #ffffffcc;
+    height: 600px;
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+  }
+  .pricing-card-p {
+    margin-top: 120px;
+  }
+
+  /* Banner Section */
+  .contact-banner {
+    /* width: 680px; */
+    margin-top: 1300px;
+    margin-bottom: 0;
+  }
 }
